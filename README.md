@@ -91,19 +91,41 @@ $ kaggle competitions download -c siim-covid19-detection # kaggle API
 ```
 
 ---  
-## 4. TRAIN MODEL
+## 4. TRAIN MODEL AND CODE
 ### 4.1 Classification
 #### 4.1.1 Multi head classification
+```
+src/study_level/train-siim-study-level.ipynb              # train study classifier model
+src/study_level/infer-siim-cov19-efnb7-infer-study.ipynb  # infer study classifier model
+```
 #### 4.1.2 2 classifier
+```
+src/two_classifier/train-2-classifier.ipynb               # train 2 classifier model
+```
 
 ### 4.2 Opacity Detection
 #### 4.2.1 Yolov5x6
----
-#### 4.2.2 Ensembling
+```
+src/image_level/train-siim-cov19-yolov5-image.ipynb       # train image object detector model
+src/image_level/infer-siim-cov19-yolov5-image.ipynb       # infer image object detector model
+```
+### 4.3 Ensembling
+```
+src/infer-siim-cov19-efnb7-study-image.ipynb              # Final submission file
+```
 `5 GroupKFolds`  
 1. `Classification` : Blending Probability  
 2. `2 classifier` : Blending Probability  
 3. `Object Detection` : WBF Weighted Boxes Fusion  
+
+### 4.4 Code
+#### 4.4.1 Training Result View
+```
+src/utils/result_view/study_model_result.ipynb   # visualize and analyze study classification model trainig result
+src/utils/result_view/2class_visualize.ipynb     # visualize and analyze image 2 classifier model trainig result
+src/utils/result_view/yolo_results.ipynb         # visualize and analyze image object detection model trainig result
+```
+
 ---
 ## 5. FINAL SUBMISSION
 ---
