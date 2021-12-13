@@ -92,17 +92,15 @@ $ kaggle competitions download -c siim-covid19-detection # kaggle API
 
 ---  
 ## 4. TRAIN MODEL
----
 ### 4.1 Classification
 #### 4.1.1 Multi head classification
+#### 4.1.2 2 classifier
 
 ### 4.2 Opacity Detection
 #### 4.2.1 Yolov5x6
-
 ---
 #### 4.2.2 Ensembling
----
-5 GroupKFolds  
+`5 GroupKFolds`  
 1. `Classification` : Blending Probability  
 2. `2 classifier` : Blending Probability  
 3. `Object Detection` : WBF Weighted Boxes Fusion  
