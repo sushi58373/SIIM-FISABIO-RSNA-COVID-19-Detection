@@ -1,0 +1,46 @@
+# source code
+
+---
+## directory structure
+---
+.
+├── image_level
+│   ├── image_level_code
+│   │   ├── hyp.scratch.yaml
+│   │   ├── run_yolov5.py
+│   │   ├── view_checkpoint
+│   │   ├── yolo_v5l6_train.ipynb
+│   │   ├── yolo_v5x6_train.ipynb
+│   │   ├── yolo_v5x_alldata.ipynb
+│   │   ├── yolo_v5x_kfold.ipynb
+│   │   └── yolo_v5x_train.ipynb
+│   ├── infer-siim-cov19-yolov5-image.ipynb
+│   └── train-siim-cov19-yolov5-image.ipynb
+├── infer-siim-cov19-efnb7-study-image.ipynb
+├── structure.txt
+├── study_level
+│   ├── infer-siim-cov19-efnb7-infer-study.ipynb
+│   └── train-siim-study-level.ipynb
+├── two_classifier
+│   └── train-2-classifier.ipynb
+└── utils
+    ├── convert-image-size.ipynb
+    ├── data-annotating.ipynb
+    ├── data-stratified-k-fold-and-create-mask.ipynb
+    ├── kfold_df.csv
+    ├── resized_data
+    │   ├── new_resized_data
+    │   └── new_resized_data2
+    ├── result_view
+    │   ├── 2class_visualize.ipynb
+    │   ├── image_model
+    │   ├── model_list.rtf
+    │   ├── study_model
+    │   ├── study_model_result.ipynb
+    │   ├── two_class
+    │   └── yolo_results.ipynb
+    ├── siim-eda.ipynb
+    └── weighted_box_fusion.ipynb
+
+13 directories, 24 files
+© 2021 
